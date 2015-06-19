@@ -1,4 +1,4 @@
-FROM rhel7:latest
+FROM openshift/rhel7
 
 # get rid of subscript manager (we use our own mirrors)
 RUN touch /var/run/rhsm ; rpm -evh subscription-manager
