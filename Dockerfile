@@ -1,4 +1,6 @@
-FROM rhel7
+#FROM registry.access.redhat.com/rhel7
+#FROM rhel7:latest
+FROM registry.access.redhat.com/library/rhel7:latest
 
 # get rid of subscript manager (we use our own mirrors)
 RUN touch /var/run/rhsm ; rpm -evh subscription-manager
