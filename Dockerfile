@@ -3,7 +3,7 @@
 FROM centos:latest
 
 # get rid of subscript manager (we use our own mirrors)
-RUN touch /var/run/rhsm ; rpm -evh subscription-manager
+#RUN touch /var/run/rhsm ; rpm -evh subscription-manager
 
 # creature comforts (make it feel like a normal linux environment)
 ENV LANG en_US.UTF-8
